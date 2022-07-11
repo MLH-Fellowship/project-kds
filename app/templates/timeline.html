@@ -1,0 +1,68 @@
+{% extends "kaitlyn_index.html" %}
+{% block body %} 
+
+    <form id="form">
+      <label for="name">Name:</label><br>
+      <input type="text" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="text" name="email"><br>
+      <label for="content">Content:</label><br>
+      <input type="text" name="content"><br>
+  
+      <button type="submit">Submit form</button>
+    </form>
+
+    <div id="timeline">
+      
+    </div>
+
+    <script>
+      const form = document.getElementById("form")
+
+      form.addEventListener("submit", async function(e) {
+        e.preventDefault();
+
+        //array of all the form inputs
+        const newpost = new FormData(form);
+
+        //prints out the new data that i'm posting
+        //console.log([...newpost])
+
+        await fetch("/api/timeline_post", {
+          method: "POST",
+          body: newpost
+        })
+
+        await fetch("/api/timeline_post").then(response=>response.json().then(data=>{
+          //console.log(data)
+          //console.log(data.timeline_posts)
+          data = data.timeline_posts
+          // for(i=0;i<data.length; i++){
+          //   console.log(data[i].name)
+            
+          // }
+          const timeline = document.getElementById("timeline");
+          data.forEach(element => {
+            //console.log(data)
+            console.log(element.name)
+            console.log(element.email)
+            console.log(element.content)
+            
+            //creating p tag for HTML assigned to var timelinep
+            let timelinep = document.createElement("p");
+            //make each child element p tag have the class "timeline"
+            timelinep.className="timeline"
+            //adding text to each child element 
+            timelinep.textContent = "Name: "+element.name+"\nEmail: "+element.email+"\nContent: "+element.content
+            //now we add that created p tag to the timeline div
+            timeline.appendChild(timelinep)
+          });
+
+        }))
+
+        })
+    
+    </script>
+
+
+{% endblock %}

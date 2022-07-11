@@ -1,0 +1,52 @@
+#places-body {
+    text-align: center;
+    padding: 15px;
+    color: #1C539F;
+}
+
+#places-format {
+    width: 800px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+    align-items: center;
+}
+
+.places-img {
+    border-radius: 10px;
+    width: 300px;
+}
+
+.places-location {
+    color: rgb(255, 255, 255);
+    margin: 10px 0px 0px 0px;
+    padding: 9px 5px;
+    /* background-color: rgba(125, 114, 225, 0.932); */
+    background-image: linear-gradient(to right, rgba(215, 122, 181, 0.929),rgba(165, 94, 212, 0.933), rgba(109, 155, 224, 0.932));
+    letter-spacing: 0.15em;
+    font-size: 0.9em;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.places-description {
+    color: white;
+    /* width: 300px; */
+    /* background-color: rgba(215, 122, 181, 0.54); */
+    background-image: linear-gradient(to right, rgba(208, 106, 170, 0.4),rgba(160, 91, 206, 0.4), rgba(97, 145, 218, 0.4));
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 1.3em;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+}
+
+#places-header {
+    text-align: center;
+    color: white;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 1.7em;
+}

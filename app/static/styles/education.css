@@ -1,0 +1,37 @@
+#education-header {
+    text-align: center;
+    color: white;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 1.7em;
+}
+
+#education-post-position {
+    display: flex;
+    justify-content: center;
+}
+
+.education-posts {
+    display: flex;
+    width: 370px;
+    margin: 10px 20px;
+    padding: 15px 20px;
+    align-items: center;
+    background-color: rgba(192, 136, 202, 0.564);
+    border-radius: 50px;
+    
+}
+
+.education-img {
+    width: 70px;
+    margin-left: 10px;
+}
+
+.education-post {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 1em;
+}

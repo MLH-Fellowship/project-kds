@@ -1,0 +1,60 @@
+#experience-header {
+    text-align: center;
+    color: white;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 1.7em;
+}
+
+#experience-columns {
+    display: grid;
+    grid-template-columns: 120px auto;
+}
+
+.experience-type {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom, rgba(215, 122, 181, 0.929),rgba(165, 94, 212, 0.933), rgba(109, 155, 224, 0.932));
+    width: 30px;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 15px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    font-size: 1.3em;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.experience-posts {
+    background-color: rgba(163, 113, 196, 0.106);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.experience-post-title {
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    padding-left: 10px;
+    font-size: 1em;
+}
+
+.experience-date {
+    background-color: rgb(213, 148, 223);
+    width: 210px;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 0.86em;
+    text-align: center;
+}
+
+.experience-post {
+    color: rgb(253, 198, 255);
+    line-height: 1.3em;
+    padding-left: 30px;
+    font-weight: 200;
+    letter-spacing: 0.03em;
+    font-size: 0.95em;
+}
